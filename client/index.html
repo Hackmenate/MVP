@@ -3,11 +3,19 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script src="index.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
   <div ng-app="regexWars">
+    <navbar>Hello this is a navbar</navbar>
     <div ng-controller="regexController">
-      <h1>{{hello}}</h1>
+      <h1>{{ prompt }}</h1>
+      <h2>{{ trialString }}</h2>
+      <form ng-submit="check()">
+        <input type="text" ng-model="input">
+        <input type="submit"></input>
+      </form>
+      <pre>{{ input }}</pre>
     </div>
   </div>
 </body>
