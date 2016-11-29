@@ -9,8 +9,8 @@
   <div ng-app="regexWars">
     <navbar>Hello this is a navbar</navbar>
     <div ng-controller="regexController">
-      <h1>{{ prompt }}</h1>
-      <h2>{{ trialString }}</h2>
+      <h1>{{ prob.prompt }}</h1>
+      <h2>{{ prob.text }}</h2>
       <form ng-submit="check()">
         <input type="text" ng-model="input">
         <input type="submit"></input>
