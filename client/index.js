@@ -1,6 +1,7 @@
 angular.module('regexWars', [
   'regexWars.solve',
   'regexWars.submit',
+  'regexWars.list',
   'ngRoute'
 ])
 
@@ -13,6 +14,10 @@ angular.module('regexWars', [
   .when('/submit', {
     templateUrl: '/submit/submit.html',
     controller: 'submitController'
+  })
+  .when('/problems', {
+    templateUrl: '/list/list.html',
+    controller: 'listController'
   })
   .otherwise({
     templateUrl: '/solve/solve.html',

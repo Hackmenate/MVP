@@ -3,23 +3,26 @@
 <head>
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
-  <script src="lib/jquery/dist/jquery.js"></script>  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="lib/jquery/dist/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="solve/solve.js"></script>
   <script src="submit/submit.js"></script>
+  <script src="list/list.js"></script>
   <script src="index.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="container-fluid" ng-controller="solveController">
+    <div>
       <nav class="navbar navbar-default">
         <ul class="nav navbar-nav">
           <li><a href="#/problems">View Problems!</a></li>
           <li><a href="#/solve">Do Problems!</a></li>
           <li><a href="#/submit">Submit Problems!</a></li>
         </ul>
-        <pre>{{5+5}}</pre>
       </nav>
-    <div ng-view></div>
+    </div>
+    <div ng-view class="container-fluid"></div>
+    <br>
     <!-- <script src="index.js"></script> -->
 
     <!-- <script src="problems/probs.js"></script> -->
@@ -33,7 +36,6 @@
       </form>
       <pre>{{ input }}</pre>
     </div> -->
-  </div>
 </body>
 </html>
 
