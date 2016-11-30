@@ -1,4 +1,61 @@
 <!DOCTYPE html>
+<html ng-app="regexWars">
+<head>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="solve/solve.js"></script>
+  <script src="submit/submit.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+    <div class="container-fluid" ng-controller="solveController">
+      <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+          <li><a href="#/problems">View Problems!</a></li>
+          <li><a href="#/solve">Do Problems!</a></li>
+          <li><a href="#/submit">Submit Problems!</a></li>
+        </ul>
+        <pre>{{5+5}}</pre>
+      </nav>
+    <div ng-view></div>
+    <!-- <script src="index.js"></script> -->
+
+    <!-- <script src="problems/probs.js"></script> -->
+
+    <!-- <div ng-controller="regexController">
+      <h1>{{ prob.prompt }}</h1>
+      <h2>{{ prob.text }}</h2>
+      <form ng-submit="check()">
+        <input type="text" ng-model="input">
+        <input type="submit"></input>
+      </form>
+      <pre>{{ input }}</pre>
+    </div> -->
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -7,6 +64,7 @@
 </head>
 <body>
   <div ng-app="regexWars">
+
     <navbar>Hello this is a navbar</navbar>
     <div ng-controller="regexController">
       <h1>{{ prob.prompt }}</h1>
@@ -19,4 +77,4 @@
     </div>
   </div>
 </body>
-</html>
+</html> -->
